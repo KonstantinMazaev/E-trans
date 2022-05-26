@@ -95,7 +95,16 @@
               </ul>
             </div>
             <div class="contacts__map-wrap">
-              <div class="contacts__map" id="map"></div>
+              <div class="contacts__map" id="map">
+                <script>
+                  setTimeout(function(){
+                      var elem = document.createElement('script');
+                      elem.type = 'text/javascript';
+                      elem.src = "https://api-maps.yandex.ru/2.1/?apikey=5a8f8bad-099c-4034-8741-39470adffb8f&lang=ru_RU";
+                      document.getElementsByTagName('body')[0].appendChild(elem);
+                  }, 5000);
+                </script>
+              </div>
             </div>
           </div>
         </section>
